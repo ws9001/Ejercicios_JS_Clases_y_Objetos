@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es_PY">
+	<head>
+		<meta charset="UTF-8">
+		<title>Favoritos</title>
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font awensom  -->
+		<link rel="stylesheet" href="css/all.css">
+	</head>
+	<body>
+		
+		<div class="container">
+			<h3 style="color:darkgreen" class="text-center">Lista de páginas favoritas</h3>
+			
+			<hr>
+			<!-- formulario -->
+			<div  class="row justify-content-center">
+				<div  class="col">
+					<div class="card text-white bg-secondary mb-3">
+						
+						<div style="color:yellow;background-color: #3535A9;border-radius: 10px" class="card-header">Agrega tus páginas favoritas</div>
+						
+						<div style="color:yellow;background-color: #7B7BEB;border-radius: 10px" class="card-body">
+							
+							<div class="form-inline justify-content-center">
+								
+								<div class="input-group mr-sm-2">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fas fa-edit"></i>
+										</div>
+									</div>
+									<input style="color:red" type="text" class="form-control" id="nombre" placeholder="Nombre de la página">
+								</div>
+								<div class="input-group mr-sm-2">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fas fa-link"></i>
+										</div>
+									</div>
+									<input style="color:red" type="url" class="form-control" id="url" placeholder="URL de la página">
+								</div>
+								<button type="button" class="btn btn-info" id="btn_agregar">
+								<i class="fas fa-plus-circle"></i>
+								Agregar favorito
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			
+			<!-- Tabla -->
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<div class="card bg-light mb-3">
+						<div style="color:yellow;background-color: #0B6C88" class="card-header">Tus favoritos</div>
+						<div style="color:yellow;background-color: #94C3E2"class="card-body">
+							<div class="row justify-content-center" id="favoritos">
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- archivos javascript -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/tarea.js"></script>
+		<script src="js/controlador.js"></script>
+	</body>
+</html>
